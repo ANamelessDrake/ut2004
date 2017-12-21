@@ -19,3 +19,5 @@ WORKDIR /usr/src/ut2004/System
 ENV PATH=$PATH:/usr/src/ut2004/System
 
 EXPOSE 7777/udp 7778/udp 7787/udp 28902 80
+
+CMD ["ucc-bin", "server", "DM-Morpheus3?game=XGame.xDeathMatch", "ini=UT2004.ini", "-nohomedir"]
