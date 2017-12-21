@@ -1,7 +1,7 @@
 FROM centos:7
 MAINTAINER Justin Bard <jbard@justbard.com>
 
-RUN yum -y install wget unzip && \
+RUN yum -y install wget unzip glibc.i686 compat-libstdc++-33-3.2.3-72.el7.i686 && \
   wget http://justbard.com/assets/DedicatedServer3339-BonusPack.zip && \
   mkdir -p /usr/src/ut2004 && \
   unzip DedicatedServer3339-BonusPack.zip -d /usr/src/ut2004 && \
